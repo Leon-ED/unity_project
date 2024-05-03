@@ -1,9 +1,5 @@
 # DELMAS Denis & EDMEE Léon - Projet
 ----
-> [!IMPORTANT]
-> Le code source du projet étant trop lourd, nous l'avons compressé en .zip
-
-
 
 Class : 1I - E3FI - 2023 - ESIEE Paris
 
