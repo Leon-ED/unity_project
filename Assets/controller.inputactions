@@ -1,0 +1,46 @@
+{
+    "name": "controller",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "0543589e-404f-40e6-a9f1-e9a59eb9d720",
+            "actions": [
+                {
+                    "name": "JoystickLeftClick",
+                    "type": "Button",
+                    "id": "9887e9c5-5de0-47ea-a3de-b5f7a4018591",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "65c13ec1-85c3-4e24-b8d8-d5a8a02ba549",
+                    "path": "<Gamepad>/leftStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox controller",
+                    "action": "JoystickLeftClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Xbox controller",
+            "bindingGroup": "Xbox controller",
+            "devices": [
+                {
+                    "devicePath": "<XInputController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

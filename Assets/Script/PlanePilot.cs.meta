@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: d5ad7553c46a0cf4fa9780a01417c557
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - cam: {instanceID: 0}
+  - Crosshair: {instanceID: 0}
+  - targetCanvas: {instanceID: 0}
+  - Cursor: {instanceID: 0}
+  - pivot: {instanceID: 0}
+  - rc3P: {instanceID: 0}
+  - rc1P: {instanceID: 0}
+  - homingMissile: {instanceID: 0}
+  - missilePoint1: {instanceID: 0}
+  - missilePoint2: {instanceID: 0}
+  - boom: {fileID: 2312591318274358134, guid: 77da29788f3010e4396994ea52057980, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
