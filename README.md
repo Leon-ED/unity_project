@@ -1,21 +1,13 @@
 # DELMAS Denis & EDMEE Léon - Projet
 ----
 
-Class : 1I - E3FI - 2023 - ESIEE Paris
+Class : 1I - E4FI - 2024 - ESIEE Paris
 
 
-Notion: https://www.notion.so/E3FI-1I-EDMEE-L-on-DELMAS-Denis-Unity-Course-a06d23a1d57840e6bd7b5098535a3145#4dc75903f4974c73896bd9388cec94f3
+Notion: https://www.notion.so/E4FI-1I-2k24-25-TDs-et-Projet-EDMEE-L-on-DELMAS-Denis-d1ad14e1d448443d899f2323f736208c
 
 Students : EDMEE Léon (leon.edmee@edu.esiee.fr)
                    DELMAS Denis (delmas.denis@edu.esiee.fr)
-
-                   
-Tags: 23_E3FI_3I_IN11 - Infographie 3D, SpaceShip, Space, Missiles
-
-
-Classification : PEGI 7
-
-
 
 
 Classification PEGI 7 : 
@@ -25,16 +17,27 @@ Classification PEGI 7 :
 - Le jeu ne présente pas de violence explicite (insultes, armes, sang) ou de transactions en ligne.
 
 
-
 Source : https://pegi.info/fr/page/que-signifient-les-logos
 
 ## Vidéos de présentation
+Afin que les vidéos en durent pas trop longtemps nous avons limité la condition de victoire à la mort de 2 vaisseaux ennemis.
+Seule la première vidéo comporte l’introduction afin de ne pas rallonger les vidéos inutilement.
+
+### Intro + kill + Défaite
+
+https://drive.google.com/file/d/1YvtSITYwFrSFtDwC3zZYBw7GVrVZ84yq/view?usp=drive_link
+
+### Victoire
+
+https://drive.google.com/file/d/14NraPx2fHDbLRA4C94uNk7yKxVcioc3y/view?usp=drive_link
+
+### Défaite
+
+https://drive.google.com/file/d/1ZzkAPzDhEXFjvtTfeNMO7HFEj53r_7MV/view?usp=drive_link
 
 ## Code source
 
-https://github.com/blackdede/Galactic-Spaceship - Github
-
-## Powerpoint : https://docs.google.com/presentation/d/1JEiGCRGMkkwqDnaeGijWXhVEc3k9x1uPyXuEFbXIad0/edit?usp=sharing
+https://github.com/Leon-ED/unity_project - Github
 
 # Sources
 
@@ -54,7 +57,7 @@ Skybox : https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-
 
 Vaisseau: https://assetstore.unity.com/packages/3d/vehicles/space/space-warrior-jet-23174
 
-Musique de fond: https://www.youtube.com/watch?v=6raVHxB-7xE
+Musique de fond: https://www.youtube.com/watch?list=PLPfHaI9XqTnFzvCP_YHvVE6l8al2gdzvB&v=5kgxj-bnPfk&feature=youtu.be
 
 Bruit d’explosion : https://www.youtube.com/watch?v=bMymzwvJcSk
 
@@ -72,7 +75,7 @@ https://github.com/features/copilot - Github Copilot
 
 *Les vaisseaux ennemis sont arrêtés grâce à notre bouclier cinétique qui les empêche de bouger.*
 
-Le jeu est prévu pour fonctionner sur une manette, un support clavier et VR arrivera au cours de l’année E4 !
+Le jeu est prévu pour fonctionner sur une manette.
 
 Il faut tuer les vaisseaux ennemis sans toucher le sol sinon c’est la fin du jeu.
 
