@@ -10,7 +10,7 @@ Classification PEGI :
 - De plus la musique angoissante peut les stresser
 - Le jeu ne présente pas de violence explicite (insultes, armes, sang) ou de transactions en ligne.
 
-![Untitled](Untitled.png)
+![Untitled](imgs/Untitled.png)
 
 Source : [https://pegi.info/fr/page/que-signifient-les-logos](https://pegi.info/fr/page/que-signifient-les-logos)
 
@@ -158,10 +158,10 @@ Face à la H.O.R.D.E., vous êtes le dernier rempart. Vos choix détermineront l
 
 Gestion du mouvement
 
-![Untitled](Untitled%201.png)
+![Untitled](imgs/Untitled%201.png)
 
 RB = Bouton droit de la manette, LB = Bouton Gauche
 
 Gestion du missile
 
-![Untitled](Untitled%202.png)
+![Untitled](imgs/Untitled%202.png)
