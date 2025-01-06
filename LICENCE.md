@@ -1,43 +1,39 @@
 # DELMAS Denis & EDMEE Léon - Projet
-----
 
 Class : 1I - E4FI - 2024 - ESIEE Paris
-
-
-Notion: https://www.notion.so/E4FI-1I-2k24-25-TDs-et-Projet-EDMEE-L-on-DELMAS-Denis-d1ad14e1d448443d899f2323f736208c
-
 Students : EDMEE Léon (leon.edmee@edu.esiee.fr)
                    DELMAS Denis (delmas.denis@edu.esiee.fr)
 
-
-Classification PEGI 7 : 
+Classification PEGI : 
 
 - Les missiles et les bruits d’explosion peuvent effrayer les jeunes enfants
 - De plus la musique angoissante peut les stresser
 - Le jeu ne présente pas de violence explicite (insultes, armes, sang) ou de transactions en ligne.
 
+![Untitled](Untitled.png)
 
-Source : https://pegi.info/fr/page/que-signifient-les-logos
+Source : [https://pegi.info/fr/page/que-signifient-les-logos](https://pegi.info/fr/page/que-signifient-les-logos)
 
 ## Vidéos de présentation
-Afin que les vidéos en durent pas trop longtemps nous avons limité la condition de victoire à la mort de 2 vaisseaux ennemis.
-Seule la première vidéo comporte l’introduction afin de ne pas rallonger les vidéos inutilement.
+
+*Afin que les vidéos en durent pas trop longtemps nous avons limité la condition de victoire à la mort de 2 vaisseaux ennemis.
+Seule la première vidéo comporte l’introduction afin de ne pas rallonger les vidéos inutilement.*
 
 ### Intro + kill + Défaite
 
-https://drive.google.com/file/d/1YvtSITYwFrSFtDwC3zZYBw7GVrVZ84yq/view?usp=drive_link
+[https://drive.google.com/file/d/1YvtSITYwFrSFtDwC3zZYBw7GVrVZ84yq/view?usp=drive_link](https://drive.google.com/file/d/1YvtSITYwFrSFtDwC3zZYBw7GVrVZ84yq/view?usp=drive_link)
 
 ### Victoire
 
-https://drive.google.com/file/d/14NraPx2fHDbLRA4C94uNk7yKxVcioc3y/view?usp=drive_link
+[https://drive.google.com/file/d/14NraPx2fHDbLRA4C94uNk7yKxVcioc3y/view?usp=drive_link](https://drive.google.com/file/d/14NraPx2fHDbLRA4C94uNk7yKxVcioc3y/view?usp=drive_link)
 
 ### Défaite
 
-https://drive.google.com/file/d/1ZzkAPzDhEXFjvtTfeNMO7HFEj53r_7MV/view?usp=drive_link
+[https://drive.google.com/file/d/1ZzkAPzDhEXFjvtTfeNMO7HFEj53r_7MV/view?usp=drive_link](https://drive.google.com/file/d/1ZzkAPzDhEXFjvtTfeNMO7HFEj53r_7MV/view?usp=drive_link)
 
 ## Code source
 
-https://github.com/Leon-ED/unity_project - Github
+[https://github.com/Leon-ED/unity_project](https://github.com/Leon-ED/unity_project) - Github
 
 # Sources
 
@@ -45,29 +41,29 @@ Aucun asset payant n’a été utilisé
 
 Assets utilisés
 
-Unity Store: https://assetstore.unity.com/
+Unity Store: [https://assetstore.unity.com/](https://assetstore.unity.com/)
 
-Poly haven : https://polyhaven.com/
+Poly haven : [https://polyhaven.com/](https://polyhaven.com/)
 
-Texture Sol : https://polyhaven.com/a/rocky_trail_02
+Texture Sol : [https://polyhaven.com/a/rocky_trail_02](https://polyhaven.com/a/rocky_trail_02)
 
-Particules : https://assetstore.unity.com/packages/vfx/particles/sherbb-s-particle-collection-170798
+Particules : [https://assetstore.unity.com/packages/vfx/particles/sherbb-s-particle-collection-170798](https://assetstore.unity.com/packages/vfx/particles/sherbb-s-particle-collection-170798)
 
-Skybox : https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633
+Skybox : [https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633](https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633)
 
-Vaisseau: https://assetstore.unity.com/packages/3d/vehicles/space/space-warrior-jet-23174
+Vaisseau: [https://assetstore.unity.com/packages/3d/vehicles/space/space-warrior-jet-23174](https://assetstore.unity.com/packages/3d/vehicles/space/space-warrior-jet-23174)
 
-Musique de fond: https://www.youtube.com/watch?list=PLPfHaI9XqTnFzvCP_YHvVE6l8al2gdzvB&v=5kgxj-bnPfk&feature=youtu.be
+Musique de fond: [https://www.youtube.com/watch?list=PLPfHaI9XqTnFzvCP_YHvVE6l8al2gdzvB&v=5kgxj-bnPfk&feature=youtu.be](https://www.youtube.com/watch?list=PLPfHaI9XqTnFzvCP_YHvVE6l8al2gdzvB&v=5kgxj-bnPfk&feature=youtu.be)
 
-Bruit d’explosion : https://www.youtube.com/watch?v=bMymzwvJcSk
+Bruit d’explosion : [https://www.youtube.com/watch?v=bMymzwvJcSk](https://www.youtube.com/watch?v=bMymzwvJcSk)
 
-Bruit de téléportation/victoire : https://www.youtube.com/watch?v=D0HDWQomaWc
+Bruit de téléportation/victoire : [https://www.youtube.com/watch?v=D0HDWQomaWc](https://www.youtube.com/watch?v=D0HDWQomaWc)
 
 ### Aide pour le développement
 
-https://stackoverflow.com/ - Stack Overflow
+[https://stackoverflow.com/](https://stackoverflow.com/) - Stack Overflow
 
-https://github.com/features/copilot - Github Copilot
+[https://github.com/features/copilot](https://github.com/features/copilot) - Github Copilot
 
 # Fonctionnement
 
@@ -83,7 +79,23 @@ Afin de favoriser l’immersion et le challenge, les kills effectués en vue *co
 
 Lorsque tous les vaisseaux sont tués, la partie est finie et le vaisseau s’arrête, car le signal de notre téléporteur est rétabli, nous allons pouvoir retourner au vaisseau mère de la flotte de l’ASN.
 
----
+# BackStory
+
+Notre jeu est basé dans l’espace. 
+
+Suite à la guerre des planètes de 2027 que la Terre ainsi que l’espèce humaine a perdue. ASN (Agence Spatiale Noiséenne) est une organisation qui lutte contre l’invasion extra-terrestre. Elle comporte plusieurs millions de membres dans la galaxy et elle est dirigée par un certain Duster. Leur vaisseau mère est souvent appelé FF500 en référence à sa couleur dorée.
+
+Le héros que vous incarnez est le lieutenant colonel divisionnaire maréchal des logis chef NIDAL. Après avoir combattu dans la 3ème division blindée de l’OTAN lors de la guerre de 2027, vous avez été blessé grièvement au combat. Des luniens (espèce vivant sur la Lune) vous ont secouru et soigné grâce à leur technologie très avancée. Vous aviez perdu l’usage des jambes et de vos yeux mais vous êtes maintenant un mi homme, mi cyborg, mi cheval.
+
+`“Alors que les vaisseaux Mirandas se rapprochent inexorablement, le lieutenant colonel NIDAL coordonne les efforts de son équipage avec une précision chirurgicale. Les systèmes de défense du FF500 s'activent, libérant un déluge de tirs de suppression pour ralentir l'avancée ennemie.`
+
+`Les Mirandas, redoutables dans leur technologie et leur nombre, ne reculent pas devant l'assaut initial. Leurs vaisseaux, élégamment conçus mais redoutablement armés, lancent des salves de projectiles énergétiques, ébranlant les boucliers du FF500. Les membres de l'équipage se battent avec férocité, faisant preuve d'un courage indomptable face à l'adversité.`
+
+`Le lieutenant colonel NIDAL, monté sur son destrier cybernétique, mène l'assaut contre les vaisseaux ennemis avec une détermination sans faille. Malgré ses blessures passées, il est un véritable symbole de résilience et d'espoir pour son équipage. Ses sens augmentés lui permettent de percevoir le moindre mouvement ennemi, lui donnant un avantage stratégique crucial dans la bataille.`
+
+`Alors que le combat fait rage dans l'espace infini, le FF500 et son équipage se battent avec une bravoure légendaire. Les éclats d'énergie illuminent l'obscurité de l'espace, créant un ballet mortel entre les vaisseaux ennemis et les défenseurs de l'humanité. Chaque membre de l'équipage sait qu'il joue un rôle essentiel dans la défense de leur planète contre les Mirandas impitoyables.`
+
+`Dans ce moment critique, le destin d'Azure AD repose entre les mains du lieutenant colonel NIDAL et de son équipage dévoué. Ils sont prêts à tout sacrifier pour assurer la survie de leur foyer et repousser l'invasion extra-terrestre.” - Journal de Bord du vaisseau mère` 
 
 # BackStory
 
@@ -95,13 +107,11 @@ Les planètes unies repoussèrent l’invasion, et la Terre, écrasée par ses p
 
 Ces nouveaux envahisseurs pillent, détruisent, et polluent sans pitié, éradiquant tout ce qui ne leur est pas utile. L’univers tout entier est maintenant menacé par cette machine de guerre insatiable.
 
-
 ## L’ASN : La Résistance Galactique
 
 Face à la H.O.R.D.E., des survivants de civilisations colonisées se sont unis pour protéger leurs mondes. Ils ont formé l’**ASN (Agence Spatiale Noiséenne)**, une organisation de résistants qui lutte contre l’invasion humaine.
 
 L’ASN regroupe des êtres de toutes origines, qu’ils soient natifs des colonies ou anciens dissidents humains. Leur quartier général est basé à bord du **FF500**, un gigantesque vaisseau doré conçu comme un symbole d’espoir pour les opprimés. Sous le commandement du légendaire **Duster**, l’ASN mène une guerre désespérée pour sauver ce qui reste de l’univers.
-
 
 ## Le Héros : Lieutenant-Colonel NIDAL
 
@@ -114,7 +124,6 @@ Grâce à leur technologie, vous avez été reconstruit :
 - Et en hommage à leur histoire, les Luniens vous ont offert un **destrier cybernétique**, une fusion de machine et de créature vivante, symbole de leur résistance.
 
 Bien que transformé, vous êtes devenu une figure clé de l’ASN, un héros galvanisant les opprimés, tout en portant le fardeau des atrocités commises par votre propre espèce.
-
 
 ## L’Ultime Combat Contre la H.O.R.D.E.
 
@@ -139,5 +148,20 @@ Face à la H.O.R.D.E., vous êtes le dernier rempart. Vos choix détermineront l
 - **La résistance triomphera-t-elle ?**
 - **Ou l’humanité dévorera-t-elle tout sur son passage, laissant derrière elle un univers mort et stérile ?**
 
-> *“Nous combattons non pas pour nous-mêmes, mais pour l’avenir. Si nous tombons, l’univers tout entier disparaîtra sous la marée humaine.”*  
+> “Nous combattons non pas pour nous-mêmes, mais pour l’avenir. Si nous tombons, l’univers tout entier disparaîtra sous la marée humaine.”
+> 
+> 
 > – Journal de Bord du FF500
+> 
+
+# Extraits de code
+
+Gestion du mouvement
+
+![Untitled](Untitled%201.png)
+
+RB = Bouton droit de la manette, LB = Bouton Gauche
+
+Gestion du missile
+
+![Untitled](Untitled%202.png)
