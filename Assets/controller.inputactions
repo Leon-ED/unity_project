@@ -28,6 +28,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Vr",
+            "id": "0d47faa2-7712-45a0-8b9d-ebb93c6f39f7",
+            "actions": [
+                {
+                    "name": "RightControllerRotation",
+                    "type": "Value",
+                    "id": "3a47db51-3014-455f-ac3b-ba36197f6ddd",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "264ef6a5-7cc8-45ee-bac7-2337a53e14b8",
+                    "path": "<OculusTouchController>{RightHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightControllerRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

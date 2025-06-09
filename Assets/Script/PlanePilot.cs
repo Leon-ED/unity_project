@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.Rendering.HighDefinition;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.XR;
+using UnityEngine.XR;
+using UnityEngine.XR.Management;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class PlanePilot : MonoBehaviour
 {
@@ -35,25 +40,58 @@ public class PlanePilot : MonoBehaviour
     public TextMeshProUGUI MainText;
     public AudioSource explosionSource;
     public AudioClip explosionSound;
+    public InputActionProperty rightControllerRotation;
+    public Camera camXROrigin;  // Ta caméra dans le XR Origin
+    bool isXRRunning = false;
+    private Controller controls;
+    private bool isGrabbing = false;
+    private Quaternion grabStartRotation;
+    private Quaternion planeStartRotation;
+    private bool wasFiringLastFrame = false;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        GameObject stateCamObject = GameObject.FindGameObjectWithTag("StateCam");
-        if (stateCamObject != null)
+
+        isXRRunning = XRGeneralSettings.Instance.Manager.isInitializationComplete;
+
+
+        if (isXRRunning)
         {
-            _CMVCamStateDrivenCamera = stateCamObject.GetComponent<Animator>();
-            if (_CMVCamStateDrivenCamera == null)
-            {
-                Debug.LogError("Animator component not found on object with tag 'StateCam'");
-            }
+            print("VR actif");
+            // On est en VR : désactive la Cinemachine ou la caméra de suivi
+            GameObject.Find("CM StateDrivenCamera1").SetActive(false);
+
+            // Active le XR Rig (si désactivé par défaut)
+            GameObject.Find("XR Origin").SetActive(true);
+
+            controls = new Controller();
+            controls.Enable();
         }
         else
         {
-            Debug.LogError("Object with tag 'StateCam' not found in the scene.");
+            print("VR inactif");
+            // On n'est pas en VR : désactive le XR Rig
+            GameObject.Find("XR Origin").SetActive(false);
+
+            GameObject stateCamObject = GameObject.FindGameObjectWithTag("StateCam");
+            if (stateCamObject != null)
+            {
+                _CMVCamStateDrivenCamera = stateCamObject.GetComponent<Animator>();
+                if (_CMVCamStateDrivenCamera == null)
+                {
+                    Debug.LogError("Animator component not found on object with tag 'StateCam'");
+                }
+            }
+            else
+            {
+                Debug.LogError("Object with tag 'StateCam' not found in the scene.");
+            }
         }
+
     }
+
     private void FixedUpdate()
     {
         ScoreText.text = "Score : " + score.ToString();
@@ -79,7 +117,7 @@ public class PlanePilot : MonoBehaviour
         RepositionnateCrossair();
         OnDrawGizmo();
         EnnemiDetection();
-        FireMissile();
+        CheckFireMissile();
 
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("A_Button"))
         {
@@ -100,21 +138,74 @@ public class PlanePilot : MonoBehaviour
     }
     private void Rotation()
     {
+        if (isXRRunning)
+        {
+            var rightHandDevices = new List<UnityEngine.XR.InputDevice>();
+            UnityEngine.XR.InputDevices.GetDevicesAtXRNode(UnityEngine.XR.XRNode.RightHand, rightHandDevices);
 
-        // transform.Rotate(Input.GetAxis("Vertical")/2, 0.0f, -Input.GetAxis("Horizontal")/2);
-        transform.Rotate(-Input.GetAxis("Vertical") / 1.5f, rotationValue, -Input.GetAxis("Horizontal") / 1.3f);
-        rc3P.m_Dutch = transform.localEulerAngles.z;
-        //rc1P.m_Dutch = transform.localEulerAngles.z;
+            if (rightHandDevices.Count > 0)
+            {
+                var device = rightHandDevices[0];
 
+                if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.gripButton, out bool gripPressed))
+                {
+                    if (gripPressed && !isGrabbing)
+                    {
+                        // On commence à grab : on enregistre la rotation de la manette et du vaisseau
+                        isGrabbing = true;
+                        if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.deviceRotation, out Quaternion currentRot))
+                        {
+                            grabStartRotation = currentRot;
+                            planeStartRotation = transform.rotation;
+                        }
+                    }
+                    else if (!gripPressed && isGrabbing)
+                    {
+                        // On vient de relâcher
+                        isGrabbing = false;
+                    }
+
+                    if (isGrabbing)
+                    {
+                        if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.deviceRotation, out Quaternion currentRotation))
+                        {
+                            // Rotation relative entre la rotation actuelle et celle au moment du grab
+                            Quaternion delta = Quaternion.Inverse(grabStartRotation) * currentRotation;
+
+                            // Appliquer la rotation relative au vaisseau
+                            Quaternion targetRotation = planeStartRotation * delta;
+
+                            // Interpolation fluide
+                            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 5f);
+                        }
+                    }
+                }
+            }
+        }
+        else
+        {
+            // Contrôle classique hors VR
+            transform.Rotate(-Input.GetAxis("Vertical") / 1.5f, rotationValue, -Input.GetAxis("Horizontal") / 1.3f);
+        }
     }
+
+
+
+
+
     private void Movement()
     {
+        // Avance toujours vers l'avant de l'avion
         transform.position += transform.forward * Time.deltaTime * (speed + accéleration);
+
+        // Ajuste la vitesse en fonction de l'altitude (comme tu le fais déjà)
         speed -= transform.forward.y * Time.deltaTime * decélerationpower;
         if (speed <= 35)
         {
             speed = 35;
         }
+
+        // Rotation manuelle (si pas en VR)
         if (Input.GetButton("RB"))
         {
             rotationValue = 0.2f;
@@ -124,9 +215,12 @@ public class PlanePilot : MonoBehaviour
             rotationValue = -0.2f;
         }
         else
+        {
             rotationValue = 0;
-
+        }
     }
+
+
     private void CamMovement()
     {
         Vector3 moveCamTo = transform.position - transform.forward * 50f + Vector3.up * 35f;
@@ -193,20 +287,71 @@ public class PlanePilot : MonoBehaviour
         }
 
     }
-    private void FireMissile()
+    private void CheckFireMissile()
     {
-        //Debug.Log("fire");
-        if (Input.GetButtonDown("fire1") && ennemieTransform != null)
+        if (isXRRunning)
         {
-            Instantiate(homingMissile, missilePoint1.position, missilePoint1.rotation);
-            homingMissile.GetComponent<HomingMissile>().RocketTarget = ennemieTransform;
+            var rightHandDevices = new List<UnityEngine.XR.InputDevice>();
+            UnityEngine.XR.InputDevices.GetDevicesAtXRNode(UnityEngine.XR.XRNode.RightHand, rightHandDevices);
 
+            if (rightHandDevices.Count > 0)
+            {
+                var device = rightHandDevices[0];
+
+                if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primaryButton, out bool isFiring))
+                {
+                    if (isFiring && !wasFiringLastFrame)
+                    {
+                        // Premier appui détecté
+                        FireMissile();
+                    }
+
+                    wasFiringLastFrame = isFiring;
+                }
+            }
+        }
+        else
+        {
+            // Mode non-VR : déclenchement standard à la manette
+            if (Input.GetButtonDown("fire1"))
+            {
+                FireMissile();
+            }
         }
     }
+
+    private void FireMissile()
+    {
+        if (ennemieTransform != null)
+        {
+            GameObject missile = Instantiate(homingMissile, missilePoint1.position, missilePoint1.rotation);
+            missile.GetComponent<HomingMissile>().RocketTarget = ennemieTransform;
+        }
+
+        if (isXRRunning)
+        {
+            var rightHandDevices = new List<UnityEngine.XR.InputDevice>();
+            UnityEngine.XR.InputDevices.GetDevicesAtXRNode(UnityEngine.XR.XRNode.RightHand, rightHandDevices);
+
+            if (rightHandDevices.Count > 0)
+            {
+                var device = rightHandDevices[0];
+                // Intensité de vibration
+                device.SendHapticImpulse(0u, 0.5f, 1.0f);
+            }
+        }
+    }
+
+
 
 
     public void SwitchCam(string cameraToSwitch)
     {
         _CMVCamStateDrivenCamera.Play(cameraToSwitch);
+    }
+
+    private void OnDisable()
+    {
+        controls.Disable();
     }
 }
