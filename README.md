@@ -86,7 +86,19 @@ Lorsque tous les vaisseaux sont tués, la partie est finie et le vaisseau s’ar
 - **Interactions avec l’environnement** : Utiliser l’espace entre les ennemis, se cacher derrière le décors.
 
 # Les courants philosophiques & Lore du jeu
+## 0. **La décolonisation et l'anticolonialisme**
 
+Notre espèce s’est toujours targuée d’être la plus puissante que la Terre ait portée. Depuis l’aube de son histoire, l’humanité n’a eu de cesse de chasser, d’exploiter et de tuer les autres formes de vie, qu’il s’agisse d’animaux chassés pour se nourrir, d’écosystèmes ravagés au nom du progrès, – plus insidieusement – d’autres communautés humaines réduites en esclavage et soumises pour le seul profit du confort ou de l’enrichissement, mais aussi d'attentats pour des différences idéologiques ou de violentes guerres meutrières. Des millions de vies humaines ont été perdues... Des espèces entières, présentes sur la planète depuis des millénaires, ont été anéanties ; des peuples entiers ont subi la violence d’une prétendue « civilisation » qui justifiait l’oppression par un sentiment de supériorité.
+
+Pourtant, en 2027, lorsque la Terre est assiégée par une force extraterrestre venue d’au-delà de nos étoiles, le miroir se brise. L’humanité découvre qu’elle n’est ni la seule, ni la plus forte, ni la plus ingénieuse des races de l’univers. Pendant des millénaires, elle a régné sur ses semblables et sur son environnement, écrasant toute forme de vie jugée inférieure. Et voilà qu’elle se trouve, du jour au lendemain, contrainte de se battre pour sa survie contre un adversaire dépassant largement ses capacités technologiques et cognitives.
+
+Cet « arroseur » qui, à force de tyranniser et d’asservir, se croyait à l’abri de toute riposte, subit à présent le « retour de bâton ». Ce renversement de situation n’est pas seulement un ressort de science-fiction ; c’est une fable presque divine de justice immanente : la force qui a opprimé est elle-même opprimée, l’espèce qui a réduit d’autres peuples à l’esclavage risque d’être, à son tour, réduite à l’impuissance et à la servitude.
+
+Face à l’invasion, l’humanité doit enfin mesurer l’ampleur de son hypocrisie et de sa violence historique. Elle doit prendre conscience qu’aucune supériorité n’est inaliénable et que chaque acte de domination porte en germe son propre retournement. Comme les peuples colonisés d’hier ont résisté et reconquis leur liberté, comme tant d’animaux et d’écosystèmes ont lutté pour subsister, l’humanité doit aujourd’hui, elle aussi, se dresser, unir ses forces et repenser son rapport à l’autre – qu’il soit humain ou extraterrestre, animal ou végétal.
+
+En définitive, cette épreuve planétaire pourrait devenir le prélude d’une véritable décolonisation universelle : non seulement la fin de la colonisation de la nature et des peuples entre eux, mais aussi l’émergence d’une conscience collective capable de reconnaître la valeur intrinsèque de chaque être, la fragilité du pouvoir et l’impératif moral de la réciprocité. C’est peut-être l’ultime leçon que l’univers nous offre : si l’on veut éviter la disparition, il faut apprendre à ne plus réduire ses semblables – quels qu’ils soient – à l’état d’objets, et reconsidérer la force comme la responsabilité de protéger plutôt que d’asservir.
+
+L'espèce humaine retiendra-elle la leçon ? Où est-ce qu'elle continuera à ignorer les rappels de Dieu.
 ## 1. **L’écosophie**
 
 Les missions explorent les conséquences de la rupture de l’équilibre naturel, ou la nécessité d’inclure les systèmes écologiques dans les décisions tactiques (protéger un biome sacré, restaurer un monde mourant…).
@@ -102,10 +114,6 @@ Face à l’ordre technocratique et impérial, la résistance incarne un souffle
 ## 4. **L’absurde**
 
 Notre héros NIDAL incarne cette tension : lutter sans garantie de victoire, par devoir, simplement pour refuser l’inhumanité du monde. Cela donne un sous-texte profond à chaque mission : la dignité d’agir, même dans un monde absurde.
-
-## 5. **La philosophie de la décolonisation**
-
-Le combat contre la "machine impériale" fait écho à des luttes contemporaines contre l’exploitation coloniale, culturelle et écologique. Chaque peuple de l’alliance pourrait incarner une résistance culturelle autant que militaire.
 
 ## 6. **Le transhumanisme / posthumanisme critique**
 
