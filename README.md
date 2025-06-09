@@ -20,7 +20,7 @@ Source : [https://pegi.info/fr/page/que-signifient-les-logos](https://pegi.info/
 
 ### Vidéo complète
 
-LIEN
+[https://drive.google.com/file/d/1Yei91C3qhDaPECs6Md7BTHclZbS0qGNT/view?usp=sharing](https://drive.google.com/file/d/1Yei91C3qhDaPECs6Md7BTHclZbS0qGNT/view?usp=sharing) - Google Drive
 
 ## Code source
 
@@ -192,18 +192,18 @@ Face à la H.O.R.D.E., vous êtes le dernier rempart. Vos choix détermineront l
 
 Gestion du mouvement en VR
 
-![Code 1.png](Code%201.png)
+![Code 1.png](imgs/Code%201.png)
 
 La manette de droite permet de déplacer le vaisseau en maintenant le “grab” lorsqu’on est sur le manche du vaisseau. En appuyant sur la gâchette arrière, on active le boost du vaisseau.
 
 Gestion du missile, on peut tirer un missile avec le bouton A de la manette
 
-![Code 2.png](Code%202.png)
+![Code 2.png](imgs/Code%202.png)
 
 On regarde les colissions avec les ennemis
 
-![Code 3.png](Code%203.png)
+![Code 3.png](imgs/Code%203.png)
 
 On ajoute un retour haptique pour le joueur afin d’améliorer l’immertion
 
-![Code 4.png](Code%204.png)
+![Code 4.png](imgs/Code%204.png)
